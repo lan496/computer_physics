@@ -1,7 +1,7 @@
 import numpy as np
 
 def determinant(A):
-    N = A.ndim + 1
+    N = A.shape[0]
     sgn = 0
 
     for i in np.arange(N):

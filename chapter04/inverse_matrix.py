@@ -1,7 +1,7 @@
 import numpy as np
 
 def inverse_matrix(A):
-    N = A.ndim + 1
+    N = A.shape[0]
     B = np.hstack((A, np.identity(N)))
 
     for i in np.arange(N):
